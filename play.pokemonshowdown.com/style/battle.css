@@ -464,6 +464,10 @@ License: GPLv2
 	background: #CCAAEE url(../fx/weather-psychicterrain.png) no-repeat scroll left top;
 	color: #441155;
 }
+.temporalterrainweather {
+	background: #CCAAEE url(../fx/weather-temporalterrain.png) no-repeat scroll left top;
+	color: #441155;
+}
 .gravityweather {
 	background: #DDAAEE url(../fx/weather-gravity.png) no-repeat scroll left top;
 	color: #661155;
