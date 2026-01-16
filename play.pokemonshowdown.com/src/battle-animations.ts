@@ -1220,6 +1220,26 @@ export class BattleScene implements BattleSceneStub {
 				time: instant ? 0 : 300,
 			});
 			break;
+		case 'jadeshield':
+			const jadeshield = new Sprite(BattleEffects.jadeshield, {
+				display: 'block',
+				x,
+				y,
+				z: side.behind(-23),
+				xscale: 2,
+				yscale: 0,
+				opacity: 0.2,
+			}, this);
+			this.$spritesFront[spriteIndex].append(jadeshield.$el);
+			this.sideConditions[siden][id] = [jadeshield];
+			jadeshield.anim({
+				opacity: 0.8,
+				time: instant ? 0 : 900,
+			}).anim({
+				opacity: 0.5,
+				time: instant ? 0 : 700,
+			});
+			break;
 		case 'mist':
 			const mist = new Sprite(BattleEffects.mist, {
 				display: 'block',
