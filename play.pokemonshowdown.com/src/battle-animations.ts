@@ -1830,6 +1830,19 @@ export class PokemonSprite extends Sprite {
 		typeadd: null,
 		dynamax: ['Dynamaxed', 'good'],
 		trapped: null, // linked volatiles are not implemented yet
+		// start custom statuses
+		vindictive: ['Vindictive', 'bad'],
+		turbocharge: ['Turbocharged', 'good'],
+		coilconnection: ['Coil Connection', 'good'],
+		coilfusion: ['Coil Fusion', 'good'],
+		plagued: ['Plagued', 'bad'],
+		ratfested: ['Ratfested', 'bad'],
+		brainwashed: ['Brainwashed', 'bad'],
+		frenzy: ['Frenzied', 'bad'],
+		bloodpacka: ['Blood Pack A', 'good'],
+		bloodpackb: ['Blood Pack B', 'good'],
+		bloodpackab: ['Blood Pack A/B', 'good'],
+		// end custom statuses
 		throatchop: ['Throat Chop', 'bad'],
 		confusion: ['Confused', 'bad'],
 		healblock: ['Heal Block', 'bad'],
