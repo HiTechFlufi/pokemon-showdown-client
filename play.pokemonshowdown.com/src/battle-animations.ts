@@ -1303,6 +1303,49 @@ export class BattleScene implements BattleSceneStub {
 			this.$spritesFront[spriteIndex].append(rock4.$el);
 			this.sideConditions[siden][id] = [rock1, rock2, rock3, rock4];
 			break;
+		case 'pinkrocks':
+			const pinkrock1 = new Sprite(BattleEffects.pinkrock1, {
+				display: 'block',
+				x: x + side.leftof(-40),
+				y: y - 10,
+				z: side.z,
+				opacity: 0.5,
+				scale: 0.2,
+			}, this);
+
+			const pinkrock2 = new Sprite(BattleEffects.pinkrock2, {
+				display: 'block',
+				x: x + side.leftof(-20),
+				y: y - 40,
+				z: side.z,
+				opacity: 0.5,
+				scale: 0.2,
+			}, this);
+
+			const pinkrock3 = new Sprite(BattleEffects.pinkrock1, {
+				display: 'block',
+				x: x + side.leftof(30),
+				y: y - 20,
+				z: side.z,
+				opacity: 0.5,
+				scale: 0.2,
+			}, this);
+
+			const pinkrock4 = new Sprite(BattleEffects.pinkrock2, {
+				display: 'block',
+				x: x + side.leftof(10),
+				y: y - 30,
+				z: side.z,
+				opacity: 0.5,
+				scale: 0.2,
+			}, this);
+
+			this.$spritesFront[spriteIndex].append(pinkrock1.$el);
+			this.$spritesFront[spriteIndex].append(pinkrock2.$el);
+			this.$spritesFront[spriteIndex].append(pinkrock3.$el);
+			this.$spritesFront[spriteIndex].append(pinkrock4.$el);
+			this.sideConditions[siden][id] = [pinkrock1, pinkrock2, pinkrock3, pinkrock4];
+			break;
 		case 'gmaxsteelsurge':
 			const surge1 = new Sprite(BattleEffects.greenmetal1, {
 				display: 'block',

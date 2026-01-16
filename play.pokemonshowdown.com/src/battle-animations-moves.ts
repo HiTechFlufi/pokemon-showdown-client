@@ -973,12 +973,6 @@ export const BattleMoveAnims: AnimTable = {
 			BattleOtherAnims.dance.anim(scene, [attacker]);
 		},
 	},
-	temporalterrain: {
-		anim(scene, [attacker]) {
-			scene.backgroundEffect('#B043D1', 1000, 0.3);
-			BattleOtherAnims.dance.anim(scene, [attacker]);
-		},
-	},
 	lifedew: {
 		anim(scene, [attacker, ...defenders]) {
 			for (const defender of defenders) {
@@ -20496,6 +20490,65 @@ export const BattleMoveAnims: AnimTable = {
 			}, 'ballistic');
 		},
 	},
+	pinkrocks: {
+		anim(scene, [attacker, defender]) {
+			scene.showEffect('pinkrock1', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.1,
+				opacity: 0.5,
+			}, {
+				x: defender.leftof(-40),
+				y: defender.y - 10,
+				z: defender.z,
+				scale: 0.2,
+				opacity: 1,
+			}, 'ballistic');
+			scene.showEffect('pinkrock2', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.1,
+				opacity: 0.5,
+				time: 75,
+			}, {
+				x: defender.leftof(-20),
+				y: defender.y - 40,
+				z: defender.z,
+				scale: 0.2,
+				opacity: 1,
+			}, 'ballistic');
+			scene.showEffect('pinkrock1', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.1,
+				opacity: 0.5,
+				time: 150,
+			}, {
+				x: defender.leftof(30),
+				y: defender.y - 20,
+				z: defender.z,
+				scale: 0.2,
+				opacity: 1,
+			}, 'ballistic');
+			scene.showEffect('pinkrock2', {
+				x: attacker.x,
+				y: attacker.y,
+				z: attacker.z,
+				scale: 0.1,
+				opacity: 0.5,
+				time: 225,
+			}, {
+				x: defender.leftof(10),
+				y: defender.y - 30,
+				z: defender.z,
+				scale: 0.2,
+				opacity: 1,
+			}, 'ballistic');
+		},
+	},
 	gmaxsteelsurge: {
 		anim(scene, [attacker, defender]) {
 			scene.backgroundEffect('#000000', 1200, 0.3);
@@ -38272,6 +38325,7 @@ BattleMoveAnims['triplekick'] = { anim: BattleMoveAnims['doublekick'].anim };
 BattleMoveAnims['aromaticmist'] = { anim: BattleMoveAnims['mistyterrain'].anim };
 BattleMoveAnims['sweetscent'] = { anim: BattleMoveAnims['mistyterrain'].anim };
 BattleMoveAnims['psychicterrain'] = { anim: BattleMoveAnims['mistyterrain'].anim };
+BattleMoveAnims['temporalterrain'] = { anim: BattleMoveAnims['mistyterrain'].anim };
 BattleMoveAnims['iondeluge'] = { anim: BattleMoveAnims['electricterrain'].anim };
 BattleMoveAnims['magneticflux'] = { anim: BattleMoveAnims['electricterrain'].anim };
 BattleMoveAnims['rototiller'] = { anim: BattleMoveAnims['electricterrain'].anim };
