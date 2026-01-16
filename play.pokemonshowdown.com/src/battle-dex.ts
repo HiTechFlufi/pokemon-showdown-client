@@ -228,7 +228,7 @@ export const Dex = new class implements ModdedDex {
 	readonly statNamesExceptHP: readonly Dex.StatNameExceptHP[] = ['atk', 'def', 'spa', 'spd', 'spe'];
 
 	pokeballs: string[] | null = null;
-
+/*
 	resourcePrefix = (() => {
 		let prefix = '';
 		if (window.document?.location?.protocol !== 'http:') prefix = 'https:';
@@ -239,8 +239,9 @@ export const Dex = new class implements ModdedDex {
       const protocol = (window.document?.location?.protocol !== 'http:') ? 'https:' : '';
       return `${protocol}//${window.Config ? Config.routes.client : 'play.pokemonshowdown.com'}/fx/`;
    })();
-	//resourcePrefix = 'https://raw.githubusercontent.com/HiTechFlufi/pokemon-sprites/main/';
-	//fxPrefix = 'https://raw.githubusercontent.com/HiTechFlufi/pokemon-sprites/main/fx/';
+	*/
+	resourcePrefix = 'https://raw.githubusercontent.com/HiTechFlufi/pokemon-sprites/main/';
+	fxPrefix = 'https://raw.githubusercontent.com/HiTechFlufi/pokemon-sprites/main/fx/';
 
 	loadedSpriteData = { xy: 1, bw: 0 };
 	moddedDexes: { [mod: string]: ModdedDex } = {};
