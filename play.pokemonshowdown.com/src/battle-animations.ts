@@ -3227,6 +3227,10 @@ const BattleEffects: { [k: string]: SpriteData } = {
 		rawHTML: '<div class="sidecondition-lightscreen" style="display:none;position:absolute" />',
 		w: 100, h: 50,
 	},
+	jadeshield: {
+		rawHTML: '<div class="sidecondition-reflect" style="display:none;position:absolute" />',
+		w: 150, h: 50,
+	},
 	mist: {
 		rawHTML: '<div class="sidecondition-mist" style="display:none;position:absolute" />',
 		w: 100, h: 50,
