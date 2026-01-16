@@ -973,6 +973,12 @@ export const BattleMoveAnims: AnimTable = {
 			BattleOtherAnims.dance.anim(scene, [attacker]);
 		},
 	},
+	temporalterrain: {
+		anim(scene, [attacker]) {
+			scene.backgroundEffect('#B043D1', 1000, 0.3);
+			BattleOtherAnims.dance.anim(scene, [attacker]);
+		},
+	},
 	lifedew: {
 		anim(scene, [attacker, ...defenders]) {
 			for (const defender of defenders) {
