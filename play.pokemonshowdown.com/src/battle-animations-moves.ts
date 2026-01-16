@@ -2439,6 +2439,9 @@ export const BattleMoveAnims: AnimTable = {
 	lightscreen: {
 		anim() {},
 	},
+	jadeshield: {
+		anim() {},
+	},
 	mist: {
 		anim(scene, [attacker, defender]) {
 			let xf = [1, -1, 1, -1];
