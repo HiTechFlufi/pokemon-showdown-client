@@ -240,8 +240,8 @@ export const Dex = new class implements ModdedDex {
       return `${protocol}//${window.Config ? Config.routes.client : 'play.pokemonshowdown.com'}/fx/`;
    })();
 	*/
-	resourcePrefix = 'https://raw.githubusercontent.com/HiTechFlufi/pokemon-sprites/main/';
-	fxPrefix = 'https://raw.githubusercontent.com/HiTechFlufi/pokemon-sprites/main/fx/';
+	resourcePrefix = 'https://raw.githubusercontent.com/HiTechFlufi/pokemon-sprites/main/'
+	fxPrefix = 'https://raw.githubusercontent.com/HiTechFlufi/pokemon-sprites/main/fx/'
 
 	loadedSpriteData = { xy: 1, bw: 0 };
 	moddedDexes: { [mod: string]: ModdedDex } = {};
