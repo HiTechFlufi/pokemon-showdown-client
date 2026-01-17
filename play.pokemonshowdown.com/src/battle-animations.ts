@@ -1304,47 +1304,17 @@ export class BattleScene implements BattleSceneStub {
 			this.sideConditions[siden][id] = [rock1, rock2, rock3, rock4];
 			break;
 		case 'pinkrocks':
-			const pinkrock1 = new Sprite(BattleEffects.pinkrock1, {
+			const pinkrocks = new Sprite(BattleEffects.pinkrocks, {
 				display: 'block',
-				x: x + side.leftof(-40),
+				x: x + side.leftof(10),
 				y: y - 10,
 				z: side.z,
 				opacity: 0.5,
-				scale: 0.2,
+				scale: 0.9,
 			}, this);
 
-			const pinkrock2 = new Sprite(BattleEffects.pinkrock2, {
-				display: 'block',
-				x: x + side.leftof(-20),
-				y: y - 40,
-				z: side.z,
-				opacity: 0.5,
-				scale: 0.2,
-			}, this);
-
-			const pinkrock3 = new Sprite(BattleEffects.pinkrock1, {
-				display: 'block',
-				x: x + side.leftof(30),
-				y: y - 20,
-				z: side.z,
-				opacity: 0.5,
-				scale: 0.2,
-			}, this);
-
-			const pinkrock4 = new Sprite(BattleEffects.pinkrock2, {
-				display: 'block',
-				x: x + side.leftof(10),
-				y: y - 30,
-				z: side.z,
-				opacity: 0.5,
-				scale: 0.2,
-			}, this);
-
-			this.$spritesFront[spriteIndex].append(pinkrock1.$el);
-			this.$spritesFront[spriteIndex].append(pinkrock2.$el);
-			this.$spritesFront[spriteIndex].append(pinkrock3.$el);
-			this.$spritesFront[spriteIndex].append(pinkrock4.$el);
-			this.sideConditions[siden][id] = [pinkrock1, pinkrock2, pinkrock3, pinkrock4];
+			this.$spritesFront[spriteIndex].append(pinkrocks.$el);
+			this.sideConditions[siden][id] = [pinkrocks];
 			break;
 		case 'gmaxsteelsurge':
 			const surge1 = new Sprite(BattleEffects.greenmetal1, {
@@ -3070,13 +3040,9 @@ const BattleEffects: { [k: string]: SpriteData } = {
 		url: 'rock2.png', // Pokemon Online - Gilad
 		w: 66, h: 72,
 	},
-	pinkrock1: {
-		url: 'pinkrock1.png', // Pokemon Online - Gilad, Modified by Pokemon Showdown user Flufi
-		w: 64, h: 80,
-	},
-	pinkrock2: {
-		url: 'pinkrock2.png', // Pokemon Online - Gilad, Modified by Pokemon Showdown user Flufi
-		w: 66, h: 72,
+	pinkrocks: {
+		url: 'pink-rocks.png', // Pokemon Online - Gilad, Modified by Pokemon Showdown user Flufi
+		w: 100, h: 100,
 	},
 	rock3: {
 		url: 'rock3.png', // by Pokemon Showdown user SailorCosmos
