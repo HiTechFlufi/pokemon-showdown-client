@@ -1855,6 +1855,8 @@ export class PokemonSprite extends Sprite {
 		bloodpacka: ['Blood Pack A', 'good'],
 		bloodpackb: ['Blood Pack B', 'good'],
 		bloodpackab: ['Blood Pack A/B', 'good'],
+		bleeding: ['Bleeding', 'bad'],
+		alldisable: ['All Disabled', 'bad'],
 		// end custom statuses
 		throatchop: ['Throat Chop', 'bad'],
 		confusion: ['Confused', 'bad'],
