@@ -3070,6 +3070,14 @@ const BattleEffects: { [k: string]: SpriteData } = {
 		url: 'rock2.png', // Pokemon Online - Gilad
 		w: 66, h: 72,
 	},
+	pinkrock1: {
+		url: 'pinkrock1.png', // Pokemon Online - Gilad, Modified by Pokemon Showdown user Flufi
+		w: 64, h: 80,
+	},
+	pinkrock2: {
+		url: 'pinkrock2.png', // Pokemon Online - Gilad, Modified by Pokemon Showdown user Flufi
+		w: 66, h: 72,
+	},
 	rock3: {
 		url: 'rock3.png', // by Pokemon Showdown user SailorCosmos
 		w: 66, h: 72,
